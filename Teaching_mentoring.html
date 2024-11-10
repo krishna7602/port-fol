@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Teaching Merits</title>
+  <style>
+    /* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #000;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Header Styling */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Table Styling */
+#teachingMeritsTable table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+#teachingMeritsTable th,
+#teachingMeritsTable td {
+  border: 1px solid #000;
+  padding: 12px;
+  text-align: left;
+}
+
+#teachingMeritsTable th {
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+}
+
+#teachingMeritsTable td {
+  background-color: #f9f9f9;
+  color: #000;
+}
+
+/* Responsive Styling */
+@media (max-width: 950px) {
+  #teachingMeritsTable table,
+  #teachingMeritsTable thead,
+  #teachingMeritsTable tbody,
+  #teachingMeritsTable th,
+  #teachingMeritsTable td,
+  #teachingMeritsTable tr {
+    display: block;
+    width: 100%;
+  }
+
+  #teachingMeritsTable thead {
+    display: none;
+  }
+
+  #teachingMeritsTable tbody tr {
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+
+  #teachingMeritsTable tbody td {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border: none;
+    border-bottom: 1px solid #ddd;
+  }
+
+  #teachingMeritsTable tbody td:last-child {
+    border-bottom: none;
+  }
+
+  #teachingMeritsTable tbody td:before {
+    content: attr(data-label);
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-right: 10px;
+    box-sizing: border-box;
+  }
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1rem;
+  color: #000;
+  padding-top: 10px;
+  border-top: 1px solid #000;
+}
+
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Teaching Merits</h1>
+    <p>List of Subjects Taught and Concerned Students</p>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section id="teachingMeritsTable">
+      <table>
+        <thead>
+          <tr>
+            <th>Subject</th>
+            <th>Concerned Students</th>
+            <th>Participation (No.)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Subject">Environmental Biotechnology and Bioengineering</td>
+            <td data-label="Concerned Students">8th semester B. Tech Biotech</td>
+            <td data-label="Participation (No.)">40</td>
+          </tr>
+          <tr>
+            <td data-label="Subject">Bioprocess Modelling and Simulation</td>
+            <td data-label="Concerned Students">6th semester B. Tech Biotech</td>
+            <td data-label="Participation (No.)">50</td>
+          </tr>
+          <tr>
+            <td data-label="Subject">Bioprocess Equipment Design and Economics</td>
+            <td data-label="Concerned Students">6th semester B. Tech Biotech</td>
+            <td data-label="Participation (No.)">50</td>
+          </tr>
+          <tr>
+            <td data-label="Subject">Fermentation and Bio-separation Technology</td>
+            <td data-label="Concerned Students">1st semester M. Tech Biotech</td>
+            <td data-label="Participation (No.)">15</td>
+          </tr>
+          <tr>
+            <td data-label="Subject">Bioprocess Engineering</td>
+            <td data-label="Concerned Students">1st semester M. Tech Biotech</td>
+            <td data-label="Participation (No.)">15</td>
+          </tr>
+          <tr>
+            <td data-label="Subject">Downstream Processing</td>
+            <td data-label="Concerned Students">2nd semester M. Tech Biotech</td>
+            <td data-label="Participation (No.)">15</td>
+          </tr>
+          <tr>
+            <td data-label="Subject">Bioprocess Engineering</td>
+            <td data-label="Concerned Students">5th semester B. Tech Biotech</td>
+            <td data-label="Participation (No.)">60</td>
+          </tr>
+          <tr>
+            <td data-label="Subject">Downstream Processing</td>
+            <td data-label="Concerned Students">6th semester B. Tech Biotech</td>
+            <td data-label="Participation (No.)">60</td>
+          </tr>
+          <tr>
+            <td data-label="Subject">Technology for Sustainable Development</td>
+            <td data-label="Concerned Students">6th and 8th semester B. Tech CSE, Civil, Mechanical, Electronics</td>
+            <td data-label="Participation (No.)">100</td>
+          </tr>
+          <tr>
+            <td data-label="Subject">Energy and Environment</td>
+            <td data-label="Concerned Students">2nd semester B. Tech CSE, Civil, Biomedical</td>
+            <td data-label="Participation (No.)">150</td>
+          </tr>
+          <tr>
+            <td data-label="Subject">Environmental Engineering Theory and Lab</td>
+            <td data-label="Concerned Students">3rd semester B. Tech Biotech</td>
+            <td data-label="Participation (No.)">30</td>
+          </tr>
+          <tr>
+            <td data-label="Subject">Biology for Engineers</td>
+            <td data-label="Concerned Students">3rd semester B. Tech CSE</td>
+            <td data-label="Participation (No.)">150</td>
+          </tr>
+          <tr>
+            <td data-label="Subject">Water and Wastewater Engineering Theory and Lab</td>
+            <td data-label="Concerned Students">5th semester B. Tech Civil</td>
+            <td data-label="Participation (No.)">40</td>
+          </tr>
+          <tr>
+            <td data-label="Subject">Bio-reaction Engineering Theory and Lab</td>
+            <td data-label="Concerned Students">5th semester B. Tech Biotech</td>
+            <td data-label="Participation (No.)">70</td>
+          </tr>
+          <tr>
+            <td data-label="Subject">Environmental Biotechnology Theory</td>
+            <td data-label="Concerned Students">6th semester B. Tech Civil</td>
+            <td data-label="Participation (No.)">30</td>
+          </tr>
+          <tr>
+            <td data-label="Subject">Advanced Bioprocess Engineering Theory and Lab</td>
+            <td data-label="Concerned Students">6th semester B. Tech Biotech</td>
+            <td data-label="Participation (No.)">90</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Teaching Merits. All Rights Reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
