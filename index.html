@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pragya Ranjan Rout</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            padding: 10px;
+            border-bottom: 2px solid black;
+        }
+
+        .navbar-items {
+            display: flex;
+            list-style: none;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .navigation-items {
+            padding: 10px 15px;
+            color: gray;
+            cursor: pointer;
+        }
+
+        .navigation-items:hover {
+            color: black;
+        }
+
+        .dropdown {
+            display: none;
+            position: absolute;
+            background-color: white;
+            border: 1px solid #ddd;
+            min-width: 150px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown li {
+            padding: 10px;
+            color: gray;
+        }
+
+        .dropdown li:hover {
+            background-color: #f1f1f1;
+            color: black;
+        }
+        .navigation-item{
+            padding: 10px;
+            color: gray;
+        }
+        .navigation-item:hover {
+            color: black;
+        }
+
+        li{
+            list-style: none;
+        }
+
+        .home{
+            display: flex;
+            padding-left: 30px;
+            padding-top: 40px;
+            padding-right: 30px;
+
+        }
+        .prr_sir{
+            border: 2px solid black;
+            box-shadow: 15px 1px 10px black;
+            border-radius: 100%;
+            height: 400px;
+            width: 400px;
+        }
+        .description_about_prrsir{
+            color: #8D5024;
+            text-align: center;
+        }
+        a:link{
+            text-decoration: none;
+        }
+        a{
+            color: gray;
+        }
+        a:hover{
+            color: black;
+        }
+        .about_prrsir{
+            color: black;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            line-height: 150%;
+            padding-top: 20px;
+            text-align: left;
+            padding-left: 30px;
+
+        }
+        .navigation-item{
+            display: none;
+        }
+        @media only screen and (max-width: 950px) {
+            .navigation-items {
+                display: none;
+            }
+            .navigation-item{
+                display: block;
+            }
+            .special-menu {
+                display: inline;
+                color: gray;
+                font-size: 24px;
+                cursor: pointer;
+            }
+            .home{
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            .prr_sir{
+            border: 2px solid black;
+            box-shadow: 15px 1px 10px black;
+            border-radius: 100%;
+            height: 200px;
+            width: 200px;
+            }
+            .description_about_prrsir{
+                padding-top: 20px;
+            }
+            .about_prrsir{
+                text-align: center;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul class="navbar-items">
+            <li><h1 class="author">Pragya Ranjan Rout, MS, PhD</h1></li>
+            <li class="navigation-items"><a href="index.html" >Home</a></li>
+            <li class="navigation-items"><a href="positions.html">Positions and Experience</a></li>
+            <li class="navigation-items">
+            <a href="Academics.html">Academics</a></li>
+            <li class="navigation-items"><a href="publication.html">Publications</a></li>
+            <li class="navigation-items"><a href="Funding.html">Funding</a>
+                </li>
+            <li class="navigation-item" onclick="toggleDropdown()">options
+                <ul class="dropdown" id="dropdown-menu">
+                    <li><a href="positions.html">experience</a></li>
+                    <li >
+                        <a href="Academics.html">Academics</a></li>
+                    <li ><a href="publication.html">Publications</a></li>
+                    <li><a href="Funding.html">Funding</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="home">
+        <div class="image_prr_sir">
+            <img src="prr_sir.jpg" alt="prr_sir" class="prr_sir"/>
+            
+        </div>
+        <div class="description_about_prrsir">
+            <h2>3-M Interactions (Metabolism, Microbiome & Metabolome)</h2>
+            <p class="about_prrsir">
+                Bioreactor Design for Environmental Applications, Environmental Microbiology, Anaerobic Digestion, Bioprocesses for Waste Valorization, Nutrient Removal and Resource Recovery from Waste Streams, Membrane Technology, Emerging Pollutant Removal from Water/Wastewater,
+            </p>
+            <p class="about_prrsir">
+                Dr. Prangya Ranjan Rout served as a Visiting Fellow/Professor at the University of Manitoba, Winnipeg, Canada. He holds B.Tech and M.Tech degrees in Biotechnology and a Ph.D. in Environmental Biotechnology/Engineering. His research interest lies in the domain of bioreactor design, anaerobic digestion, bioconversion of wastes to wealth, emerging contaminants removal, membrane technology, resource recovery and reuse, and wastewater treatment. Till date he has over 100 scholarly contributions, including refereed journal articles (47), granted patent (1), design patent (1), published patent (1), filed patent (1). edited books (2), book chapters (29), national (17) and international conference (12) presentations to his credit. So far, he has been awarded research fundings of approximately ₹ 2.7 Crore for the execution of three research projects related to resource (phosphorous) recovery, and gut microbiome. He is the recipient of prestigious SIRE Fellowship (Govt. of India) for the year 2023-24. Some of the awards he has received include Odisha Young Scientist Award 2017, Best Practice Oriented Paper 2019 by American Society of Civil Engineering (ASCE), and Outstanding Reviewer 2019 by ASCE. He is an Associate Editor of the Environment, Development, and Sustainability Journal (Springer-Nature) and Journal of Hazardous, Toxic, and Radioactive Wastes (ASCE) and has served as a guest editor of a special issue of the journal. He is an Editorial Board Member of Journal of Water Process Engineering (Elsevier). He is also actively involved in Editing contributed book volumes for internationally renowned publishers like CRC Press, John Wiley & Sons, Elsevier, ASCE, etc.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function toggleDropdown() {
+            const dropdown = document.getElementById("dropdown-menu");
+            dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+        }
+
+
+        window.onclick = function(event) {
+            if (!event.target.matches('.navigation-item')) {
+                const dropdown = document.getElementById("dropdown-menu");
+                if (dropdown && dropdown.style.display === "block") {
+                    dropdown.style.display = "none";
+                }
+            }
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Priyankar Dey's Publications</title>
+  <style>
+    /* Basic reset and styling */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+    h1, h2 {
+      color: #333;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    h2 {
+      font-size: 1.5em;
+      margin-top: 20px;
+    }
+
+    /* Container styling */
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Publication list styling */
+    ul {
+      list-style-type: none;
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+    li {
+      margin-bottom: 15px;
+    }
+    h2{
+    color: #9F6C47;
+    
+}
+
+    /* Toggle button styling */
+    .toggle-button {
+      display: inline-block;
+      margin-bottom: 10px;
+      padding: 8px 16px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-align: center;
+    }
+    .toggle-button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Pragya Ranjan Rout's Publications</h1>
+
+    <!-- Book Chapters Section -->
+    <h2>Book Chapters</h2>
+    <button class="toggle-button" onclick="toggleVisibility('book-chapters')">Show/Hide Book Chapters</button>
+    <ul id="book-chapters" style="display: block;">
+      <li>Priyankar Dey, Jalal Moludi. <em>Clostridium difficile infection and gut microbiota: From fundamentals to future prospects</em>. Elsevier/Academic press (accepted and under process).</li>
+      <li>Richard S Bruno, Priyankar Dey. <em>Green tea catechins and nonalcoholic steatohepatitis</em>. In: Dietary supplements with antioxidant activities – understanding mechanisms and potential health benefits. Royal Society of Chemistry (Accepted).</li>
+      <li>Priyankar Dey, Geoffrey Y. Sasaki, Richard S. Bruno. <em>Green Tea: Composition, Metabolism, Bioavailability and Role in Preventing Chronic Diseases</em>. In: Handbook of Nutraceuticals and Functional Foods, 3rd Edition, CRC Press, Taylor & Francis.</li>
+      <li>Priyankar Dey. <em>Herbal medicine in current therapies and research</em> (Translated from Bengali). Ed. Samar Nag. Varnaparichay 2015, Vol 1, 2nd issue, pp. 65-71.</li>
+    </ul>
+
+    <!-- Research Articles Section -->
+    <h2>Research Articles</h2>
+    <button class="toggle-button" onclick="toggleVisibility('research-articles')">Show/Hide Research Articles</button>
+    <ul id="research-articles" style="display: block;">
+      <li>Raja Rezgui, Ruhi Walia, Jyoti Sharma, Dwinder Sidhu, Khalid Alshagadali, Saumya Ray Chaudhuri, Amir Saeed, Priyankar Dey. (2023). <em>Chemically defined Lactobacillus plantarum cell-free metabolites demonstrate cytoprotection in HepG2 cells through Nrf2-dependent mechanism</em>. Antioxidants. IF: 7.675.</li>
+      <li>Rajat Sharma, Swati Singh, Nisha Tewari, Priyankar Dey. (2023). <em>A toxic shrub turned therapeutic: the dichotomy of Nerium oleander bioactivities</em>. Toxicon (Accepted). IF: 3.035.</li>
+      <li>Priyankar Dey. (2023). <em>Gut Microbial Considerations and Feasibility of Phytochemicals as Anti-Covid Prophylaxis: Critical Role of Bioavailability</em>. Phytotherapy Research (Accepted). IF: 6.388.</li>
+      <li>Navneet Kaur, Priyankar Dey. (2023). <em>Bacterial Exopolysaccharides as Emerging Bioactive Macromolecules: From Fundamentals to Applications</em>. Research in Microbiology. (Accepted) IF: 3.946.</li>
+      <!-- Additional research articles can go here following the same format -->
+    </ul>
+  </div>
+
+  <script>
+    // JavaScript function to toggle visibility of sections
+    function toggleVisibility(id) {
+      const section = document.getElementById(id);
+      section.style.display = (section.style.display === 'block') ? 'none' : 'block';
+    }
+  </script>
+
+</body>
+</html>

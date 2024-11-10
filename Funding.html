@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research Funding</title>
+  <style>
+    /* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #000;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #000;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Styling for the Funding List */
+#fundingList ul {
+  list-style: none;
+  padding: 0;
+}
+
+#fundingList li {
+  margin: 20px 0;
+  padding: 15px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+#fundingList li h3 {
+  font-size: 1.8rem;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+#fundingList li p {
+  font-size: 1.1rem;
+  color: #444;
+}
+
+/* Responsive Styling */
+@media (max-width: 950px) {
+  body {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  #fundingList li {
+    margin: 15px 0;
+    padding: 12px;
+  }
+
+  #fundingList li h3 {
+    font-size: 1.6rem;
+  }
+
+  #fundingList li p {
+    font-size: 1rem;
+  }
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1rem;
+  color: #000;
+  padding-top: 10px;
+  border-top: 1px solid #000;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Research Funding Overview</h1>
+    <p>A summary of ongoing research projects and grants</p>
+  </header>
+
+  <main>
+    <section id="fundingList">
+      <ul>
+        <li>
+          <h3>Development of commensal gut microbes-derived non-immunogenic therapeutic leads</h3>
+          <p><strong>Grant:</strong> TIET seed grant (PI)</p>
+          <p><strong>Duration:</strong> 2020-2023</p>
+        </li>
+        <li>
+          <h3>Development of Nano-bio-composites as next generation arsenal against biofilms</h3>
+          <p><strong>Grant:</strong> TIET- Virginia Tech Center of Excellence for Emerging Materials (co-PI)</p>
+          <p><strong>Duration:</strong> 2020-2023</p>
+        </li>
+        <li>
+          <h3>Gut microbiome-resistant chitosan-EGCG nanoconjugates</h3>
+          <p><strong>Grant:</strong> Bio-X initiative under TIET- Virginia Tech Center of Excellence for Emerging Materials (PI)</p>
+          <p><strong>Duration:</strong> 2021-2024</p>
+        </li>
+        <li>
+          <h3>Development of an in vitro pseudo-facilitation model of lipotoxicity</h3>
+          <p><strong>Grant:</strong> SERB-SRG (PI)</p>
+          <p><strong>Duration:</strong> 2021-2023</p>
+        </li>
+        <li>
+          <h3>Identification of immunogenic peptide for diagnosis of orthohantavirus infection</h3>
+          <p><strong>Grant:</strong> DST Indo-Russia (co-PI)</p>
+          <p><strong>Duration:</strong> 2022-2025</p>
+        </li>
+        <li>
+          <h3>Effect of SCFA producing commensals isolated from healthy donors</h3>
+          <p><strong>Grant:</strong> Seed grant from Saudi Arabia (PI)</p>
+          <p><strong>Duration:</strong> 2022-2023</p>
+        </li>
+        <li>
+          <h3>Development of gut microbiota-resistant mucoadhesive bio-nano-encapsulation</h3>
+          <p><strong>Grant:</strong> SERB-POWER grant (co-PI)</p>
+          <p><strong>Duration:</strong> 2022-2025</p>
+        </li>
+        <li>
+          <h3>An Artificial Colon Model for Microbiota Research (AMMR)</h3>
+          <p><strong>Grant:</strong> BIRAC (PI)</p>
+          <p><strong>Duration:</strong> 2022-2024</p>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Research Projects. All Rights Reserved.</p>
+  </footer>
+
+  <script >
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
+
+  </script>
+</body>
+</html>

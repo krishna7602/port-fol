@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Profile</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #000;
+    background-color: #fff;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #000;
+}
+
+header h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+section {
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+thead th {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 2px solid #000;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+h2{
+    color: #9F6C47;
+    padding-left: 10px;
+}
+tbody tr:hover {
+    background-color: #e0e0e0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    border-top: 1px solid #000;
+    margin-top: 20px;
+}
+
+/* Responsive design for screens smaller than 950px */
+@media (max-width: 950px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+        width: 100%;
+    }
+
+    thead {
+        display: none; /* Hide table headers on small screens */
+    }
+
+    tbody tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+        padding: 10px;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+    }
+
+    tbody td {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        border: none;
+        border-bottom: 1px solid #ddd;
+    }
+
+    tbody td:before {
+        content: attr(data-label); /* Display attribute as label */
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-right: 10px;
+    }
+
+    tbody td:last-child {
+        border-bottom: none; /* Remove bottom border from last cell in each row */
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Academic Profile</h1>
+    </header>
+
+    <section id="academics">
+        <h2>Educational Background</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Degree</th>
+                    <th>Institution</th>
+                    <th>Year</th>
+                    <th>Additional Information</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Degree">PhD in Zoology (Immunopharmacology)</td>
+                    <td data-label="Institution">University of North Bengal</td>
+                    <td data-label="Year">2011 - 2016</td>
+                    <td data-label="Additional Information">Fellowships: DBT-JRF/SRF and ICMR-SRF</td>
+                </tr>
+                <tr>
+                    <td data-label="Degree">Master of Science (Biotechnology)</td>
+                    <td data-label="Institution">Bangalore University</td>
+                    <td data-label="Year">2007 - 2009</td>
+                    <td data-label="Additional Information">University 2nd Rank</td>
+                </tr>
+                <tr>
+                    <td data-label="Degree">Bachelor of Science (Biotechnology)</td>
+                    <td data-label="Institution">Bangalore University</td>
+                    <td data-label="Year">2004 - 2007</td>
+                    <td data-label="Additional Information"></td>
+                </tr>
+                <tr>
+                    <td data-label="Degree">Higher Secondary</td>
+                    <td data-label="Institution">West Bengal Council of Higher Secondary Education</td>
+                    <td data-label="Year">2004</td>
+                    <td data-label="Additional Information"></td>
+                </tr>
+                <tr>
+                    <td data-label="Degree">Secondary Examination</td>
+                    <td data-label="Institution">West Bengal Board of Secondary Education</td>
+                    <td data-label="Year">2002</td>
+                    <td data-label="Additional Information"></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Academic Profile</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

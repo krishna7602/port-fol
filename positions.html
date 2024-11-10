@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Profile</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #000;
+    background-color: #fff;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #000;
+}
+
+header h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+section {
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+thead th {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 2px solid #000;
+    font-weight: bold;
+}
+h2{
+    color: #9F6C47;
+    padding-left: 10px;
+}
+tbody tr:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+    background-color: #e0e0e0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    border-top: 1px solid #000;
+    margin-top: 20px;
+}
+.projects{
+    padding: 20px;
+}
+
+
+@media (max-width: 950px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+        width: 100%;
+    }
+
+    thead {
+        display: none; 
+    }
+
+    tbody tr {
+        margin-bottom: 15px;
+        padding: 10px;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+    }
+
+    tbody td {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        border: none;
+        border-bottom: 1px solid #ddd;
+    }
+
+    tbody td:before {
+        content: attr(data-label); /* Display attribute as label */
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-right: 10px;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Professional Profile</h1>
+    </header>
+
+    <section id="experience">
+        <h2>Positions and Experience</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Position</th>
+                    <th>Institution</th>
+                    <th>Emphasis</th>
+                    <th>Duration</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Position">Assistant Professor</td>
+                    <td data-label="Institution">NIT Jalandhar</td>
+                    <td data-label="Emphasis">Department of Biotechnology</td>
+                    <td data-label="Duration">01/2020 - Present</td>
+                </tr>
+                <tr>
+                    <td data-label="Position">Senior Research Associate</td>
+                    <td data-label="Institution">The Ohio State University</td>
+                    <td data-label="Emphasis">Vitamin E stereoisomer, Method development, Intestinal health</td>
+                    <td data-label="Duration">10/2018 - 11/2019</td>
+                </tr>
+                <tr>
+                    <td data-label="Position">Senior Research Associate</td>
+                    <td data-label="Institution">The Ohio State University</td>
+                    <td data-label="Emphasis">Vitamin E stereoisomer, Method development, Intestinal health</td>
+                    <td data-label="Duration">10/2018 - 11/2019</td>
+                </tr>
+                <tr>
+                    <td data-label="Position">Senior Research Associate</td>
+                    <td data-label="Institution">The Ohio State University</td>
+                    <td data-label="Emphasis">Vitamin E stereoisomer, Method development, Intestinal health</td>
+                    <td data-label="Duration">10/2018 - 11/2019</td>
+                </tr>
+                <tr>
+                    <td data-label="Position">Senior Research Associate</td>
+                    <td data-label="Institution">The Ohio State University</td>
+                    <td data-label="Emphasis">Vitamin E stereoisomer, Method development, Intestinal health</td>
+                    <td data-label="Duration">10/2018 - 11/2019</td>
+                </tr>
+                <tr>
+                    <td data-label="Position">Senior Research Associate</td>
+                    <td data-label="Institution">The Ohio State University</td>
+                    <td data-label="Emphasis">Vitamin E stereoisomer, Method development, Intestinal health</td>
+                    <td data-label="Duration">10/2018 - 11/2019</td>
+                </tr>                
+
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+        <div class="projects">
+            <h2 class="projects_heading">Projects worked on...</h2>
+            <ul>
+                <li>Bioavailability of alpha-tocopherol stereoisomers. The Ohio State University. Industry (Abbott) project </li>
+                <li>Effects of dairy products on postprandial hyperglycemia in prediabetic adults. The Ohio State University. Funding: US National Dairy Council</li>
+                <li>Structure-function relationship of green tea catechins to mitigate non-alcoholic steatohepatitis. The Ohio State University. Funding: OSU Center for Plant Sciences </li>                
+                <li>
+                    Gamma-tocopherol to prevent ischemia stroke injury in obese mice. The Ohio State University. Funding: OSU Discovery Themes 
+                </li>
+                <li>
+                    Antiinflammatory bioactivities of green tea catechins along the gut-liver axis in obese models of nonalcoholic steatohepatitis. The Ohio State University. Funding: USDA-NEFA (2014-67017-21761) 
+                </li>
+                <li>
+                    Purification and characterization of bioactive natural antioxidant, immunomodulator and anticancer products from Dioscorea alata L., of North Eastern region of India. University of North Bengal. Funding: Department of Biotechnology (DBT), GOVT of India (BT/09/NE/TBP/2010. 17.02.2011) 
+                </li>
+            </ul>
+        </div>
+
+        <div class="projects">
+            <h2 class="projects_heading">Judging  Responsibilities</h2>
+            <ul>
+                <li>Bioavailability of alpha-tocopherol stereoisomers. The Ohio State University. Industry (Abbott) project </li>
+                <li>Effects of dairy products on postprandial hyperglycemia in prediabetic adults. The Ohio State University. Funding: US National Dairy Council</li>
+                <li>Structure-function relationship of green tea catechins to mitigate non-alcoholic steatohepatitis. The Ohio State University. Funding: OSU Center for Plant Sciences </li>                
+                <li>
+                    Gamma-tocopherol to prevent ischemia stroke injury in obese mice. The Ohio State University. Funding: OSU Discovery Themes 
+                </li>
+                <li>
+                    Antiinflammatory bioactivities of green tea catechins along the gut-liver axis in obese models of nonalcoholic steatohepatitis. The Ohio State University. Funding: USDA-NEFA (2014-67017-21761) 
+                </li>
+                <li>
+                    Purification and characterization of bioactive natural antioxidant, immunomodulator and anticancer products from Dioscorea alata L., of North Eastern region of India. University of North Bengal. Funding: Department of Biotechnology (DBT), GOVT of India (BT/09/NE/TBP/2010. 17.02.2011) 
+                </li>
+            </ul>
+        </div>
+
+    <footer>
+        <p>&copy; 2024 Professional Profile</p>
+    </footer>
+</body>
+</html>
